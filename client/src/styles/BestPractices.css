@@ -1,0 +1,200 @@
+/* Best Practices Tab Styling */
+#practices {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 30px;
+  text-align: center; /* Center all content within the practices section */
+  box-sizing: border-box;
+}
+
+#practices h2 {
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  width: 100%;
+}
+
+.farming-text {
+  text-align: center;
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 800px; /* Limit width for better readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.practice-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.practice-card {
+  background: whitesmoke;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  border-top: 5px solid #4caf50;
+}
+
+.practice-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Fix Learn More button centering */
+a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.farm-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #F5F7F2;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.farm-btn:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Need Help Section */
+.practises-contact {
+  text-align: center;
+  margin: 50px auto 0; /* Center horizontally */
+  padding: 30px;
+  background: #F5F7F2;
+  border-radius: 15px;
+  max-width: 800px; /* Control width */
+}
+
+.practises-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #F5F7F2;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 20px auto 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.practises-btn:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styles - Make sure it appears in the center */
+.modal {
+  display: flex; /* Changed from 'none' to 'flex' */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #2e7d32;
+  text-align: left;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+#submitPracticesDetails {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin: 10px auto 0;
+  display: block;
+  width: 200px;
+}
+
+#submitPracticesDetails:hover {
+  background: #3e8e41;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Add spinning animation for loading indicator */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    margin: 20% auto;
+    padding: 20px;
+  }
+  
+  #submitPracticesDetails {
+    width: 100%;
+  }
+}

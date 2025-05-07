@@ -1,0 +1,223 @@
+/* Government Schemes Styles */
+.schemes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.schemes-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.schemes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.scheme-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  border-top: 5px solid #4caf50;
+}
+
+.scheme-card p {
+  color: #666;
+}
+
+.scheme-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.scheme-icon {
+  font-size: 2.5rem;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.scheme-card h3 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+#schemes h2 {
+  color: #2e7d32;
+  font-size: 2.2rem;
+  margin-top: 5px;
+}
+
+.scheme-details {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  margin: 20px;
+  color: black;
+  margin-top: 40px;
+}
+
+.scheme-details span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Scheme Buttons */
+.schemes-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #F5F7F2;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.schemes-btn:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Need Help Button */
+.contact-btn {
+  padding: 15px 30px;
+  background-color: #4caf50;
+  color: #F5F7F2;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.schemes-contact {
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+  background: #F5F7F2;
+  border-radius: 15px;
+}
+
+/* Modal Styles for Schemes */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  overflow: auto;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #2e7d32;
+  text-align: left;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+#submitSchemesDetails {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin: 10px auto 0;
+  display: block;
+  width: 200px;
+}
+
+#submitSchemesDetails:hover {
+  background: #3e8e41;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    margin: 20% auto;
+    padding: 20px;
+  }
+  
+  #submitSchemesDetails {
+    width: 100%;
+  }
+}
+
+@media(min-width:1400px) {
+  .modal {
+      top: 76%
+  }
+  #schemesModal {
+      top: 82%;
+      max-height: 82vh;
+  }
+}
