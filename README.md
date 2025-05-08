@@ -23,7 +23,7 @@ Users can upload images, input personal and farming details, and receive instant
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: ReactJs, CSS
+- **Frontend**: React, CSS
 - **Backend**: Node.js, Express
 - **DataBase**: PostgreSQL
 - **AI Integration**: Gemini AI API  
