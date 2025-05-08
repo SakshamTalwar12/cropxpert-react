@@ -37,8 +37,8 @@ Users can upload images, input personal and farming details, and receive instant
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/LordShen2109/farmingassistant.git
-   cd farmingassistant
+   git clone https://github.com/SakshamTalwar12/cropxpert-react.git
+   cd cropxpert-react
 2. **Install all dependencies**
    ```bash
    npm i
@@ -46,4 +46,5 @@ Users can upload images, input personal and farming details, and receive instant
 4. **Generate your own api key at https://aistudio.google.com/app/apikey and save in .env file**
 5. **Start the server**
    ```bash
+   npm start
    node server.js
