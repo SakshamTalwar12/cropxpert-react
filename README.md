@@ -32,7 +32,7 @@ Users can upload images, input personal and farming details, and receive instant
 - **Collaboration**: GitHub for team contributions and workflow management
 
 ---
-
+Project Link-https://farmingassistant-dc9u.onrender.com/
 ## 📂 Running the Project Locally
 
 1. **Clone the repo**  
@@ -48,4 +48,3 @@ Users can upload images, input personal and farming details, and receive instant
    ```bash
    npm start
    node server.js
-   Project Link=https://farmingassistant-dc9u.onrender.com/
